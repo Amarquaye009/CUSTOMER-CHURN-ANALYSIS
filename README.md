@@ -1,105 +1,53 @@
-LP2_CUSTOMER-CHURN-ANALYSIS- TEAM FIJI
-## CRISP-DM (Cross-Industry Standard Process for Data Mining) Methodology Application 
-The CRISP-DM framework is a widely adopted methodology for data mining projects, providing a structured approach to planning and executing data analysis tasks. It comprises six major phases, each with its own set of tasks and deliverables, ensuring a comprehensive and iterative process.
-
-The six(6) phases are;
- 1. Business Understanding which focuses on understanding the objectives and requirements of the project.
-
- 2. Data understanding  which drives the focus to identify, collect, and analyze the data sets that can help you accomplish the project goals.
-
- 3. Data preparation which prepares the final datasets for modeling.
-
- 4. Modeling to build and assess various models based on several differnt modeling techniques.
-
- 5. Evaluation - To evaluate results and review process and determine the next steps.
-
- 6. Deployment - To deploy the results can be as simple as generating a report or any requirement given.
- 
- 
- # 1. Business Understanding
-
-<<<<<<< HEAD
-## Project Title
-CUSTOMER CHURN ANALYSIS
-=======
-# 1. BUSINESS UNDERSTANDING
+# CUSTOMER-CHURN-ANALYSIS PROJECT
 
 ## PROJECT TITLE
-
 CHURN PREDICTION AND ANALYSIS : Leveraging Machine Learning for Customer Retention
 
 ## OBJECTIVE
-
-Team aims to analyze the various factors influencing clients' decisions to churn and predict future churn probability by leveraging machine learning techniques.
+- Learn more about classification models and help the client, a telecommunication company, to understand their data.
+- Find the lifetime value of each customer. know what factors affect the rate at which customers stop using their network.
+- Predict if a customer will churn or not based on the Payment method.
 
 ## GOAL
-To develop predictive models that forecast the likelihood of individual customers churning in the future, enabling proactive intervention strategies to retain at-risk customers and maximize customer retention
+- To develop predictive models that forecast the likelihood of individual customers churning in the future
+- Enabling proactive intervention strategies to retain at-risk customers and maximize customer retention
 
-# 2. Data Understanding:
+## Data Sources:
+The datasets where extracted from three(3) places.
 
-Data Sources:
+- First dataset - First 3000 records of the dataset was extracted from Microsoft SQL Server
+- Second dataset - The second 2000 records of the dataset was downloaded from GitHub Repository
+- Third dataset - The third part of the data was downloaded from a OneDrive (Test Data)
 
-This project utilizes two primary datasets sourced from different platforms:
+## Hypothesis
+- H0: Payment methods does not significantly influence customer churn 
+- H1: Payment methods significantly influence customer churn
 
-The first dataset originates from an SQL database and the second dataset is sourced from a GitHub repository.
-
-The columns in both datasets include :
-
-1. Customer_ID
-2. Gender
-3. Senior_Citizen
-4. Partner
-5. Dependents
-6. Tenure_Months
-7. Phone_Service
-8. Multiple_Lines
-9. Internet_Service
-10. Online_Security
-11. Online_Backup
-12. Device_Protection
-13. Tech_Support
-14. Streaming_TV
-15. Streaming_Movies
-16. Contract
-17. Paperless_Billing
-18. Payment_Method
-19. Monthly_Charges
-20. Total_Charges
-21. Churn
+## Conclusion on Hypothesis
+The Chi-Square statistic of 433.207 and the extremely small p-value, we have strong evidence to reject the null hypothesis. This means there is a significant association between payment methods and churn. Therefore, we conclude that payment methods significantly influence churn.
 
 
-# 3. Data Preparation
->>>>>>> a858f641cf2df677182582068a58736df34502b8
+## Research Questions
+1.	Is there a relationship between Demographic Factors and Churn rate?
+How does gender, senior citizenship, and partnership status relate to churn rates? Are there any significant differences in churn between different demographic groups?
 
-## Objective
-Machine learning  model to analyse customer churn.By designing this model we will be able to asses the customer charn rate. with the ouput results  from the model we will be able comeup with strategies for customer retension hence increse revenue.
+2.	Does the type of Internet service relate to the probability of a customer churn?
+Which type of internet service recorded the highest customer churn rate?
 
+3.	Does the Tenure type have a relationship with customer Churn?
+Is there a correlation between the tenure of a customer and the likelihood of churn? Do longer-tenured customers exhibit different churn behavior compared to newer ones?
 
-## Goal
-Designing  a machine learning model to analyse customer churn using 3 datasets. The first 2 datasets are for training and evaluation while the 3rd  dataset  will be used for testing the model.
+4.	Does the Contract Type have a correlation with the customer churn? 
+How does the type of contract (month-to-month, one-year, two-year) influence churn rates? Are customers on longer-term contracts less likely to churn?
 
+5.	Payment Method and Churn:
+ Does the chosen payment method impact churn behavior? Are customers using certain payment methods more likely to churn than others?
 
-# 2. Data Understanding
-Data sources-the datasets in question for the annalysis were sourced  from diffent sources. The first dataset been drawn from a database and the other 2 from a csv file and onedrive respectively.
+ ## Installation: 
+- pyodbc
+- python-dotenv
+- openpyxl
+- imbalanced-learn
 
-The columns include in the datasets were as follows;
-CustomerID
-Gender
-Senior citizen
-Partner
-Dependent
-Tenure
-Phone service
-Multiple lines
-internet service 
-onlinesecurity
-Device protection
-Tech support
-Streaming tv
-Streaming movies 
-Contract
-Paperless billing
-Payment method
-monthly charges
-Total charges
-Churn
+## Authors
+Team Fiji Members
